@@ -1,0 +1,39 @@
+.header {
+display: flex;
+justify-content: space-between;
+ background-color: rgb(31, 127, 77);
+}
+
+.logo {
+  color: white;
+  margin: 10px 5px;
+}
+
+.nav {
+  display: flex;
+  margin: 10px 0;
+  
+}
+.nav > li {
+  padding: 0 10px;
+}
+
+.nav > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav > li > a:hover {
+  color: blue;
+ cursor: grab;
+}
+
+
+@media only screen and (max-width: 720px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
